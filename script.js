@@ -16,12 +16,6 @@ class MEVTierMaker {
                 icon: '🔒'
             },
             {
-                id: 'mev-blocking',
-                name: 'MEV Blocking',
-                description: 'Block MEV extraction attempts',
-                icon: '🚫'
-            },
-            {
                 id: 'batch-auctions',
                 name: 'Batch Auctions',
                 description: 'Coincidence of wants trading',
