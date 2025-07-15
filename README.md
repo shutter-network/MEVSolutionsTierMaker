@@ -13,41 +13,41 @@ A web-based tier maker for ranking different solutions that address malicious ME
 
 ## MEV Protection Solutions Included
 
-### 🛡️ 0-Click Solution
-Everyone is protected by default - no user action required
+### � Threshold Encrypted Mempools
+Encrypt transactions until inclusion
 
-### 🔗 Connect MEV-Protected RPC
-Configure wallet to use protected RPC endpoints
-
-### 🏪 Use DEX with MEV Protection
-Trade on decentralized exchanges with built-in MEV protection
-
-### 🔒 Private Mempool
-Submit transactions to private memory pools
-
-### ⚡ Flashbots Protect
-Use Flashbots protection service
-
-### 🚫 MEV Blocker
+### � MEV Blocking
 Block MEV extraction attempts
+
+### 🐄 Batch Auctions
+Coincidence of wants trading
+
+### � Private Mempools
+Submit transactions to private pools
+
+### 🤝 MEV Revenue Sharing
+Share MEV profits with users
+
+### 🏗️ Decentralized Block Building
+Distributed block construction
+
+### 🦊 Wallet-Level Protection
+Built-in wallet MEV protection
+
+### � Rollup MEV Protection
+L2 MEV protection mechanisms
 
 ### 🎭 Commit-Reveal Schemes
 Hide transaction details temporarily
 
-### 🏛️ MEV Auction
-Auction MEV to highest bidder
+### ⚖️ Fair Sequencing
+Fair transaction ordering protocols
 
-### ⛽ Gas Optimization
-Optimize gas to reduce MEV impact
+### ⏰ Time Boost
+Time-based transaction ordering
 
-### 🔄 Layer 2 Scaling
-Use L2 solutions with MEV protection
-
-### 🤝 MEV Share
-Share MEV profits with users
-
-### ⚖️ Fair Ordering
-Implement fair transaction ordering
+### 🏛️ MEV Auctions
+Auction MEV rights to highest bidder
 
 ## How to Use
 

@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/MEVSolutionsTierMaker.git"
+    "url": "git+https://github.com/shutter-network/MEVSolutionsTierMaker.git"
   },
   "keywords": [
     "mev",
@@ -22,7 +22,7 @@
   "author": "Your Name",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yourusername/MEVSolutionsTierMaker/issues"
+    "url": "https://github.com/shutter-network/MEVSolutionsTierMaker/issues"
   },
-  "homepage": "https://yourusername.github.io/MEVSolutionsTierMaker"
+  "homepage": "https://shutter-network.github.io/MEVSolutionsTierMaker"
 }
