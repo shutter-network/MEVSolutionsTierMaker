@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #2756a7;
+    min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.info-section {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.info-section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2d3748;
+}
+
+.info-section p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #4a5568;
+}
+
+.tier-maker {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.tier-maker-layout {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.tier-list {
+    flex: 2;
+    min-width: 0;
+}
+
+.tier-list h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2d3748;
+}
+
+.solutions-pool {
+    flex: 1;
+    min-width: 400px;
+}
+
+.tier {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-height: 80px;
+}
+
+.tier-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    width: 80px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.tier-content {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    min-height: 80px;
+    border: 2px dashed transparent;
+    transition: all 0.3s ease;
+}
+
+.tier-content.drag-over {
+    border-color: #3182ce;
+    background: rgba(49, 130, 206, 0.1);
+}
+
+.s-tier .tier-label { background: linear-gradient(135deg, #ff6b6b, #ee5a52); }
+.a-tier .tier-label { background: linear-gradient(135deg, #ffa726, #ff9800); }
+.b-tier .tier-label { background: linear-gradient(135deg, #ffee58, #fdd835); }
+.c-tier .tier-label { background: linear-gradient(135deg, #66bb6a, #4caf50); }
+.d-tier .tier-label { background: linear-gradient(135deg, #42a5f5, #2196f3); }
+
+.solutions-pool {
+    margin-top: 2rem;
+}
+
+.solutions-pool h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2d3748;
+}
+
+.solutions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: rgba(247, 250, 252, 0.8);
+    border-radius: 8px;
+    border: 2px dashed #cbd5e0;
+    min-height: 600px;
+    max-height: none;
+}
+
+.solution-card {
+    background: white;
+    padding: 0.75rem;
+    border-radius: 6px;
+    cursor: move;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 50px;
+}
+
+.solution-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.solution-card.dragging {
+    opacity: 0.5;
+    transform: rotate(2deg);
+}
+
+.solution-icon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    width: 32px;
+    text-align: center;
+}
+
+.solution-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.solution-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    color: #2d3748;
+}
+
+.solution-description {
+    font-size: 0.75rem;
+    color: #718096;
+    line-height: 1.3;
+}
+
+.your-rankings {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.your-rankings h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2d3748;
+}
+
+.ranking-display {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ranking-tier {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-height: 60px;
+    padding: 1rem;
+    background: rgba(247, 250, 252, 0.8);
+    border-radius: 8px;
+}
+
+.ranking-label {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.ranking-label.s-tier { background: linear-gradient(135deg, #ff6b6b, #ee5a52); }
+.ranking-label.a-tier { background: linear-gradient(135deg, #ffa726, #ff9800); }
+.ranking-label.b-tier { background: linear-gradient(135deg, #ffee58, #fdd835); }
+.ranking-label.c-tier { background: linear-gradient(135deg, #66bb6a, #4caf50); }
+.ranking-label.d-tier { background: linear-gradient(135deg, #42a5f5, #2196f3); }
+
+.ranking-items {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.ranking-item {
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #2d3748;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-primary {
+    background: #4c5d7a;
+    color: white;
+    border: 2px solid #5a6c8a;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(76, 93, 122, 0.3);
+    background: #5a6c8a;
+}
+
+.btn-secondary {
+    background: white;
+    color: #4a5568;
+    border: 2px solid #e2e8f0;
+}
+
+.btn-secondary:hover {
+    background: #f7fafc;
+    border-color: #cbd5e0;
+}
+
+footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+.disclaimer {
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .tier-maker-layout {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .solutions-pool {
+        min-width: auto;
+    }
+    
+    .solutions-container {
+        max-height: none;
+        min-height: 400px;
+    }
+    
+    .tier-label {
+        width: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .ranking-tier {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .ranking-label {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .solution-card {
+        padding: 0.75rem;
+        min-height: 50px;
+    }
+    
+    .solution-icon {
+        font-size: 1.25rem;
+        width: 30px;
+    }
+    
+    .solution-name {
+        font-size: 0.9rem;
+    }
+    
+    .solution-description {
+        font-size: 0.8rem;
+    }
+}
+
+/* Animation for smooth transitions */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.solution-card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.tier-content {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Drag and drop visual feedback */
+.drag-preview {
+    position: fixed;
+    pointer-events: none;
+    z-index: 1000;
+    transform: rotate(5deg);
+    opacity: 0.8;
+}
+
+.empty-state {
+    text-align: center;
+    color: #a0aec0;
+    font-style: italic;
+    padding: 2rem;
+}
+
+/* Print styles for image generation */
+@media print {
+    body {
+        background: white;
+    }
+    
+    .container {
+        max-width: none;
+        padding: 1rem;
+    }
+    
+    .actions, .solutions-pool {
+        display: none;
+    }
+}

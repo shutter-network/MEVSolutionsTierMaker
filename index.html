@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEV Solutions Tier Maker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MEV Solutions Tier Maker</h1>
+            <p class="subtitle">Rank Different Solutions to Address Malicious MEV</p>
+        </header>
+
+        <div class="info-section">
+            <h3>What is this?</h3>
+            <p>
+                Maximal Extractable Value (MEV) represents the maximum value that can be extracted from block production in excess of the standard block reward and gas fees. 
+                This tier maker helps you rank different solutions that protect users from malicious MEV attacks.
+            </p>
+            <p>
+                Drag and drop the MEV protection solutions into tiers. S-tier represents the most effective solutions, while D-tier represents the least effective ones.
+            </p>
+        </div>
+
+        <div class="tier-maker">
+            <div class="tier-maker-layout">
+                <div class="tier-list">
+                    <h3>Tier Rankings</h3>
+                    <div class="tier s-tier">
+                        <div class="tier-label">S</div>
+                        <div class="tier-content" data-tier="s"></div>
+                    </div>
+                    <div class="tier a-tier">
+                        <div class="tier-label">A</div>
+                        <div class="tier-content" data-tier="a"></div>
+                    </div>
+                    <div class="tier b-tier">
+                        <div class="tier-label">B</div>
+                        <div class="tier-content" data-tier="b"></div>
+                    </div>
+                    <div class="tier c-tier">
+                        <div class="tier-label">C</div>
+                        <div class="tier-content" data-tier="c"></div>
+                    </div>
+                    <div class="tier d-tier">
+                        <div class="tier-label">D</div>
+                        <div class="tier-content" data-tier="d"></div>
+                    </div>
+                </div>
+
+                <div class="solutions-pool">
+                    <h3>MEV Protection Solutions</h3>
+                    <div class="solutions-container">
+                        <div class="solution-card" draggable="true" data-solution="threshold-encrypted-mempools">
+                            <div class="solution-icon">🔒</div>
+                            <div class="solution-content">
+                                <div class="solution-name">Threshold Encrypted Mempools</div>
+                                <div class="solution-description">Encrypt transactions until inclusion</div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-card" draggable="true" data-solution="mev-blocking">
+                            <div class="solution-icon">🚫</div>
+                            <div class="solution-content">
+                                <div class="solution-name">MEV Blocking</div>
+                                <div class="solution-description">Block MEV extraction attempts</div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-card" draggable="true" data-solution="batch-auctions">
+                            <div class="solution-icon">🐄</div>
+                            <div class="solution-content">
+                                <div class="solution-name">Batch Auctions</div>
+                                <div class="solution-description">Coincidence of wants trading</div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-card" draggable="true" data-solution="private-mempools">
+                            <div class="solution-icon">🔐</div>
+                            <div class="solution-content">
+                                <div class="solution-name">Private Mempools</div>
+                                <div class="solution-description">Submit transactions to private pools</div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-card" draggable="true" data-solution="mev-share">
+                            <div class="solution-icon">�</div>
+                            <div class="solution-content">
+                                <div class="solution-name">MEV Revenue Sharing</div>
+                                <div class="solution-description">Share MEV profits with users</div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-card" draggable="true" data-solution="decentralized-block-building">
+                            <div class="solution-icon">🏗️</div>
+                            <div class="solution-content">
+                                <div class="solution-name">Decentralized Block Building</div>
+                                <div class="solution-description">Distributed block construction</div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-card" draggable="true" data-solution="wallet-level-protection">
+                            <div class="solution-icon">🦊</div>
+                            <div class="solution-content">
+                                <div class="solution-name">Wallet-Level Protection</div>
+                                <div class="solution-description">Built-in wallet MEV protection</div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-card" draggable="true" data-solution="rollup-mev-protection">
+                            <div class="solution-icon">�</div>
+                            <div class="solution-content">
+                                <div class="solution-name">Rollup MEV Protection</div>
+                                <div class="solution-description">L2 MEV protection mechanisms</div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-card" draggable="true" data-solution="commit-reveal">
+                            <div class="solution-icon">🎭</div>
+                            <div class="solution-content">
+                                <div class="solution-name">Commit-Reveal Schemes</div>
+                                <div class="solution-description">Hide transaction details temporarily</div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-card" draggable="true" data-solution="fair-sequencing">
+                            <div class="solution-icon">⚖️</div>
+                            <div class="solution-content">
+                                <div class="solution-name">Fair Sequencing</div>
+                                <div class="solution-description">Fair transaction ordering protocols</div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-card" draggable="true" data-solution="time-boost">
+                            <div class="solution-icon">⏰</div>
+                            <div class="solution-content">
+                                <div class="solution-name">Time Boost</div>
+                                <div class="solution-description">Time-based transaction ordering</div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-card" draggable="true" data-solution="mev-auctions">
+                            <div class="solution-icon">🏛️</div>
+                            <div class="solution-content">
+                                <div class="solution-name">MEV Auctions</div>
+                                <div class="solution-description">Auction MEV rights to highest bidder</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="your-rankings">
+            <h3>Your Rankings</h3>
+            <div class="ranking-display">
+                <div class="ranking-tier" data-display="s">
+                    <div class="ranking-label s-tier">S</div>
+                    <div class="ranking-items"></div>
+                </div>
+                <div class="ranking-tier" data-display="a">
+                    <div class="ranking-label a-tier">A</div>
+                    <div class="ranking-items"></div>
+                </div>
+                <div class="ranking-tier" data-display="b">
+                    <div class="ranking-label b-tier">B</div>
+                    <div class="ranking-items"></div>
+                </div>
+                <div class="ranking-tier" data-display="c">
+                    <div class="ranking-label c-tier">C</div>
+                    <div class="ranking-items"></div>
+                </div>
+                <div class="ranking-tier" data-display="d">
+                    <div class="ranking-label d-tier">D</div>
+                    <div class="ranking-items"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-secondary" id="resetBtn">Reset</button>
+            <button class="btn btn-primary" id="downloadBtn">Download Image</button>
+        </div>
+
+        <footer>
+            <p class="disclaimer">
+                This is a tool for expressing preferences about MEV protection solutions. Rankings are personal opinions and do not represent official recommendations.
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "mev-solutions-tier-maker",
+  "version": "1.0.0",
+  "description": "A web-based tier maker for ranking MEV protection solutions",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000 || python3 -m http.server 8000",
+    "test": "open test.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/MEVSolutionsTierMaker.git"
+  },
+  "keywords": [
+    "mev",
+    "ethereum",
+    "blockchain",
+    "tier-maker",
+    "web3",
+    "defi"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/MEVSolutionsTierMaker/issues"
+  },
+  "homepage": "https://yourusername.github.io/MEVSolutionsTierMaker"
+}
