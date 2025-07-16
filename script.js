@@ -45,12 +45,6 @@ class MEVTierMaker {
                 description: 'Built-in wallet MEV protection',
                 icon: '🦊'
             },
-            {
-                id: 'rollup-mev-protection',
-                name: 'Rollup MEV Protection',
-                description: 'L2 MEV protection mechanisms',
-                icon: '🚀'
-            },
 
             {
                 id: 'fair-sequencing',
