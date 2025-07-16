@@ -16,6 +16,18 @@ class MEVTierMaker {
                 icon: '🔒'
             },
             {
+                id: 'tee-encrypted-mempools',
+                name: 'TEE-based Encrypted Mempools',
+                description: 'Trusted execution environment transaction encryption',
+                icon: '🛡️'
+            },
+            {
+                id: 'vdf-encrypted-mempools',
+                name: 'VDF-based Encrypted Mempools',
+                description: 'Verifiable delay function transaction encryption',
+                icon: '⏳'
+            },
+            {
                 id: 'batch-auctions',
                 name: 'Batch Auctions',
                 description: 'Coincidence of wants trading',
