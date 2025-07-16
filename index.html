@@ -31,6 +31,9 @@
             <div class="tier-maker-layout">
                 <div class="tier-list">
                     <h3>Tier Rankings</h3>
+                    <div class="tier-group-header">
+                        <h4>Crucial/Essential</h4>
+                    </div>
                     <div class="tier s-tier">
                         <div class="tier-label">S</div>
                         <div class="tier-content" data-tier="s"></div>
@@ -39,6 +42,9 @@
                         <div class="tier-label">A</div>
                         <div class="tier-content" data-tier="a"></div>
                     </div>
+                    <div class="tier-group-header">
+                        <h4>Unclear/Complementary</h4>
+                    </div>
                     <div class="tier b-tier">
                         <div class="tier-label">B</div>
                         <div class="tier-content" data-tier="b"></div>
@@ -46,6 +52,9 @@
                     <div class="tier c-tier">
                         <div class="tier-label">C</div>
                         <div class="tier-content" data-tier="c"></div>
+                    </div>
+                    <div class="tier-group-header">
+                        <h4>Should Be Phased Out</h4>
                     </div>
                     <div class="tier d-tier">
                         <div class="tier-label">D</div>
@@ -136,6 +145,22 @@
                             <div class="solution-content">
                                 <div class="solution-name">MEV Auctions</div>
                                 <div class="solution-description">Auction MEV rights to highest bidder</div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-card" draggable="true" data-solution="validator-ejection">
+                            <div class="solution-icon">🚫</div>
+                            <div class="solution-content">
+                                <div class="solution-name">Validator Ejection Mechanisms</div>
+                                <div class="solution-description">Remove validators exhibiting MEV extraction</div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-card" draggable="true" data-solution="pow-ordering">
+                            <div class="solution-icon">⛏️</div>
+                            <div class="solution-content">
+                                <div class="solution-name">Proof-of-Work Ordering</div>
+                                <div class="solution-description">Transaction ordering based on computational work</div>
                             </div>
                         </div>
                     </div>

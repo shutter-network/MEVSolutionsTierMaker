@@ -69,6 +69,18 @@ class MEVTierMaker {
                 name: 'MEV Auctions',
                 description: 'Auction MEV rights to highest bidder',
                 icon: '🏛️'
+            },
+            {
+                id: 'validator-ejection',
+                name: 'Validator Ejection Mechanisms',
+                description: 'Remove validators exhibiting MEV extraction',
+                icon: '🚫'
+            },
+            {
+                id: 'pow-ordering',
+                name: 'Proof-of-Work Ordering',
+                description: 'Transaction ordering based on computational work',
+                icon: '⛏️'
             }
         ];
         
