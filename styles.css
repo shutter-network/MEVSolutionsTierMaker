@@ -89,9 +89,10 @@ header h1 {
 .tier-group-header {
     margin: 1.5rem 0 1rem 0;
     padding: 0.5rem 1rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(45, 55, 72, 0.8);
     border-radius: 8px;
     backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .tier-group-header h4 {
@@ -100,7 +101,7 @@ header h1 {
     color: white;
     text-align: center;
     margin: 0;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 .tier-group-header:first-of-type {
