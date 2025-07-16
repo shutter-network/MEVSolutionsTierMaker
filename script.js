@@ -51,12 +51,7 @@ class MEVTierMaker {
                 description: 'L2 MEV protection mechanisms',
                 icon: '🚀'
             },
-            {
-                id: 'commit-reveal',
-                name: 'Commit-Reveal Schemes',
-                description: 'Hide transaction details temporarily',
-                icon: '🎭'
-            },
+
             {
                 id: 'fair-sequencing',
                 name: 'Fair Sequencing',
